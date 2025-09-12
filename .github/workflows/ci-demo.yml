@@ -1,0 +1,11 @@
+name: 简单CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: 打印Hello
+      run: echo "Hello, DevOps!"
